@@ -16,7 +16,12 @@ while True:
     need = str(input("What do you need? (nterm, sum, or pyramid)\t"))
     if need == "nterm":
         n_term(int(input("Which element dou you need?\t")),first,difference)
+        print("=======END OF PROCESS========")
     elif need == "sum":
         sum_of_n(int(input("How many elements you need summarised?\t")),first,n_term(int(input("Which element dou you need?\t")),first,difference))
-    else:
+        print("=======END OF PROCESS========")
+    elif need == "pyramid":
         pyramid(int(input("How many levels shoud the prymaid have?\t")),n_term(int(input("Which element dou you need?\t")),first,difference))
+        print("=======END OF PROCESS========")
+    else:
+        print("Please choose a valid option!")
